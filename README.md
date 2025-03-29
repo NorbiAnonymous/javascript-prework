@@ -21,34 +21,3 @@ Nie martw się tym, że to jest Twoje pierwsze spotkanie z JavaScriptem. Niniejs
 Kod JS tworzony w ramach projektu będziesz umieszczać w pliku js/script.js, który został już stworzony w Twoim projekcie za pomocą komendy npm run init-project.
 
 To wszystko, co będzie Ci potrzebne do realizacji tego modułu. Po przygotowaniu projektu zapisz nowy commit i przejdź do nauki JS-a w następnym submodule!
-
-index.html:
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
-</body>
-</html> -->
-
-<!-- js/functions.js
-
-function printMessage(msg){
-let div = document.createElement('div');
-div.innerHTML = msg;
-document.getElementById('messages').appendChild(div);
-}
-
-function clearMessages(){
-document.getElementById('messages').innerHTML = '';
-} -->
