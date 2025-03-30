@@ -85,4 +85,16 @@
 // printMessage('<br>');
 // //4.Ćwiczenie Zapisywanie odpowiedzi gracza
 
+let computerInput = Math.floor(Math.random() * 3) + 1;
+let computerMove = 'nieznany ruch';
+
+if (computerInput === 1) {
+	computerMove = 'kamień';
+} else if (computerInput === 2) {
+	computerMove = 'papier';
+} else if (computerInput === 3) {
+	computerMove = 'nożyce';
+}
+
+console.log('Ruch Komputera to: ' + computerMove);
 
