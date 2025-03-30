@@ -21,3 +21,42 @@ Nie martw się tym, że to jest Twoje pierwsze spotkanie z JavaScriptem. Niniejs
 Kod JS tworzony w ramach projektu będziesz umieszczać w pliku js/script.js, który został już stworzony w Twoim projekcie za pomocą komendy npm run init-project.
 
 To wszystko, co będzie Ci potrzebne do realizacji tego modułu. Po przygotowaniu projektu zapisz nowy commit i przejdź do nauki JS-a w następnym submodule!
+
+---
+
+Zadanie: Dokończenie logiki gry
+
+Twoim zadaniem jest dokończenie gry tak, aby poprawnie rozpoznawała ruch komputera i człowieka, a także wyświetlała wynik rundy!
+
+Zacznij od usunięcia całej zawartości pliku js/script.js.
+Odczytanie ruchu komputera
+
+Powyżej w jednym z zagnieżdżonych edytorów pokazaliśmy kod, który losuje liczbę od 1 do 3, i jeśli ta liczba to 1, rozpoznaje ruch jako "kamień".
+
+Skopiuj cały kod z tego edytora do pliku js/script.js, a następnie uzupełnij go o dwa bloki else if. Powinny one obsłużyć przypadki wylosowania liczby 2 i 3. W tych sytuacjach zmienna computerMove ma otrzymać odpowiednią wartość – 'papier' lub 'nożyce'.
+
+Po wykonaniu tej części zadania zapisz commit i wyślij go do zdalnego repozytorium.
+Odczytanie ruchu gracza
+
+Znajdź teraz edytor, w którym użyliśmy funkcji prompt do zapytania gracza o jego ruch. Skopiuj cały kod JS z tego przykładu i umieść go na końcu pliku js/script.js.
+
+Podobnie jak wcześniej, dodaj bloki else if dla ruchów "papier" i "nożyce".
+
+Po wykonaniu tej części zadania ponownie zapisz commit i wyślij go do zdalnego repozytorium.
+Wynik gry
+
+Na końcu pliku js/script.js dodaj teraz nowy blok if...else if...else, który wyświetli komunikat o wyniku gry.
+
+Dla przykładu, jeśli computerMove to 'kamień', a playerMove to 'papier', powinien zostać wyświetlony komunikat "Ty wygrywasz!".
+
+W rozwiązaniu tego zadania będzie Ci potrzebny sposób na sprawdzenie, czy spełnione są oba warunki. Najwygodniej będzie to zrobić za pomocą operatora &&, który oznacza "oraz".
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+printMessage('Ty wygrywasz!');
+}
+
+Pamiętaj, żeby obsłużyć również sytuację, gdy występuje remis, a także, kiedy playerMove jest równe nieznany ruch – taka sytuacja może mieć miejsce, jeśli gracz nie posłuchał polecenia i wpisał coś innego niż 1, 2 lub 3.
+
+Po zakończeniu pracy znów zapisz commit i wyślij go do zdalnego repozytorium. Następnie, link do najnowszego commita wyślij do sprawdzenia.
+
+Powodzenia!
