@@ -99,9 +99,9 @@ if (computerInput === 1) {
 	computerMove = 'nożyce';
 }
 
-console.log('Ruch Komputera to: ' + computerMove);
+printMessage('Ruch komputera to: ' + computerMove);
 
-// Odczytanie ruchu gracza ma on 3 możliwości 
+// Odczytanie ruchu gracza
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('Gracz wpisał: ' + playerInput);
 
@@ -115,4 +115,19 @@ if (playerInput === '1') {
 	playerMove = 'nożyce';
 }
 
-console.log('Twój ruch to: ' + playerMove);
+printMessage('Twój ruch to: ' + playerMove);
+
+//Dodanie Wynik gry Remis Logika
+if (playerMove === 'nieznany ruch') {
+	printMessage('Nieprawidłowy ruch gracza');
+} else if (playerMove === computerMove) {
+	printMessage('Remis 🙌');
+} else if (
+	(playerMove === 'kamień' && computerMove === 'nożyce') ||
+	(playerMove === 'papier' && computerMove === 'kamień') ||
+	(playerMove === 'nożyce' && computerMove === 'papier')
+) {
+	printMessage('Ty wygrywasz 😍');
+} else {
+	printMessage('Komputer wygrywa 💻');
+}
