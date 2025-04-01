@@ -1,3 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+body header {
+  margin-bottom: 20px;
+  padding: 60px 20px;
+  color: #fff;
+  position: relative;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff5f6d, #ffc371);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+body header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  animation: fadeInDown 1s ease forwards;
+  opacity: 0;
+}
+body header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  clip-path: polygon(0 60%, 50% 100%, 100% 60%, 100% 100%, 0 100%);
+}
+body .main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .main-container .game-area {
+  flex: 2 1 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+body .main-container .game-area .container {
+  margin-bottom: 20px;
+}
+body .main-container .game-area .container div {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+body .main-container .game-area #result {
+  font-size: 24px;
+  margin-top: 20px;
+}
+body .main-container .game-area .button-style {
+  padding: 8px;
+}
+body .main-container .game-area .button-style .style-btn {
+  padding: 12px 20px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: bisque;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body .main-container .game-area .button-style .style-btn:hover {
+  background-color: brown;
+  cursor: pointer;
+  color: #fff;
+}
+body .main-container .instructions {
+  flex: 1 1 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+body .main-container .instructions section h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+body .main-container .instructions .text-color {
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+body .main-container .instructions .text-color p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+body .main-container .instructions ul li {
+  list-style-type: none;
+}
+@media (max-width: 768px) {
+  body .main-container {
+    flex-direction: column;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0Msc0JBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ0NEOztBREVBO0VBQ0MscUNBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7RUFDQSxrRUFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0FDQ0Q7QURDQztFQUNDLG1CQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLG9EQUFBO0VBQ0EseUNBQUE7RUFDQSxnQkFBQTtBQ0NGO0FEQ0U7RUFDQyxpQkFBQTtFQUNBLGdCQUFBO0VBQ0Esc0NBQUE7RUFDQSxVQUFBO0FDQ0g7QURFRTtFQUNDLFdBQUE7RUFDQSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxPQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLGdFQUFBO0FDQUg7QURJQztFQUNDLGFBQUE7RUFDQSxlQUFBO0VBQ0EsU0FBQTtFQUNBLHVCQUFBO0VBQ0EsdUJBQUE7QUNGRjtBRElFO0VBQ0MsZUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSx3Q0FBQTtFQUNBLGFBQUE7QUNGSDtBREtHO0VBQ0MsbUJBQUE7QUNISjtBREtJO0VBQ0MsYUFBQTtFQUNBLGlCQUFBO0FDSEw7QURPRztFQUNDLGVBQUE7RUFDQSxnQkFBQTtBQ0xKO0FEUUc7RUFDQyxZQUFBO0FDTko7QURRSTtFQUNDLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSx3QkFBQTtFQUNBLHVEQUFBO0FDTkw7QURRSztFQUNDLHVCQUFBO0VBQ0EsZUFBQTtFQUNBLFdBQUE7QUNOTjtBRFlFO0VBQ0MsZUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSx3Q0FBQTtFQUNBLGFBQUE7RUFDQSxnQkFBQTtBQ1ZIO0FEWUc7RUFDQyxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsNkJBQUE7RUFDQSxvQkFBQTtBQ1ZKO0FEYUc7RUFDQyxrQkFBQTtFQUNBLGlCQUFBO0FDWEo7QURhSTtFQUNDLG1CQUFBO0VBQ0EsZ0JBQUE7QUNYTDtBRGdCSTtFQUNDLHFCQUFBO0FDZEw7QURvQkM7RUFDQztJQUNDLHNCQUFBO0VDbEJEO0FBQ0Y7QURxQkM7RUFDQztJQUNDLFVBQUE7SUFDQSw0QkFBQTtFQ25CRDtFRHFCQTtJQUNDLFVBQUE7SUFDQSx3QkFBQTtFQ25CRDtBQUNGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

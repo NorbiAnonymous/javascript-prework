@@ -63,8 +63,20 @@ Po zakończeniu pracy znów zapisz commit i wyślij go do zdalnego repozytorium.
 
 Powodzenia!
 
+---
+
 Zadanie 3
 Wykorzystanie funkcji Twoim zadaniem jest uzupełnienie i wykorzystanie funkcji getMoveName oraz displayResult w taki sposób, aby gra działała poprawnie. W uzupełnieniu deklaracji tych funkcji pomoże Ci rozwiązanie poprzedniego zadania, ponieważ przenosimy do tych funkcji logikę, którą już napisaliśmy.
 
+---
+
 Zadanie 4
 Jak już zapewne się domyślasz, celem tego zadania jest dokończenie naszej gry. Na stronie umieścisz trzy guziki i napiszesz kod, który sprawi, że po kliknięciu któregoś z guzika zostanie rozegrana partia gry. Oczywiście, wybór guzika będzie jednocześnie wyborem ruchu gracza, dzięki czemu nie będzie już potrzeby wpisywania 1, 2 lub 3 w oknie prompt.
+
+---
+
+Zadanie 5 Dodatkowe Dla Chętnych
+Ostylowanie gry
+Liczenie wygranych rund
+Czy musi być fair?
+Dalszy rozwój projektu

@@ -6,17 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div id="buttons"></div>
-        <div id="messages"></div>
-    </div>
-    <div id="buttons">
-        <button id="play-rock">Kamień</button>
-        <button id="play-paper">Papier</button>
-        <button id="play-scissors">Nożyce</button>
+    <header>
+        <h2>Witam wszytskich Zapraszam do gry (Kamień, Papier, Nożyce)</h2>
+    </header>
+
+    <div class="main-container">
+        <div class="game-area">
+            <div class="container">
+                <div id="buttons"></div>
+                <div id="messages"></div>
+            </div>
+            <div id="result">Wynik: Gracz 0 - 0 Komputer</div>
+            <div id="buttons-container" class="button-style">
+                <button id="play-rock" type="button" class="style-btn">Kamień</button>
+                <button id="play-paper" type="button" class="style-btn">Papier</button>
+                <button id="play-scissors" type="button" class="style-btn">Nożyce</button>
+            </div>
+        </div>
+
+        <aside class="instructions">
+            <section>
+                <h3 class="text-color">Instrukcja Obsługi</h3>
+                <p class="text-color">1.Cel Gry</p>
+                <p>Gra polega na wybraniu jednego z trzech ruchów: Kamień, Papier lub Nożyce, aby pokonać przeciwnika
+                    (komputer).Wynik zależy od zasad:</p>
+                <ul>
+                    <li>- Kamień wygrywa z Nożycami.</li>
+                    <li>- Papier wygrywa z Kamieniem.</li>
+                    <li>- Nożyce wygrywają z Papierem.</li>
+                </ul>
+                <p class="text-color">2.Jak grać</p>
+                <ul>
+                    <li>- Na stronie znajdują się trzy przyciski: Kamień, Papier, Nożyce.</li>
+                    <li>- Kliknij jeden z przycisków, aby wybrać swój ruch.</li>
+                    <li>- Komputer automatycznie wylosuje swój ruch.</li>
+                    <li>- Wynik rundy zostanie wyświetlony na ekranie.</li>
+                </ul>
+                <p class="text-color">3.Wyświetlanie wyników</p>
+                <ul>
+                    <li>Wynik każdej rundy (wygrana, przegrana lub remis) pojawi się w sekcji wiadomości.</li>
+                    <li>Licznik wygranych gracza i komputera jest aktualizowany po każdej rundzie.</li>
+                </ul>
+                <p class="text-color">4.Zasady punktacji</p>
+                <ul>
+                    <li>Wygrana gracza zwiększa jego licznik punktów.</li>
+                    <li>Wygrana komputera zwiększa jego licznik punktów.</li>
+                    <li>Remis nie zmienia wyniku.</li>
+                </ul>
+                <p class="text-color">5.Stylizacja gry</p>
+                <ul>
+                    <li>Gra jest ostylowana za pomocą gradientowego tła i czcionki Montserrat.</li>
+                    <li>Wyniki i wiadomości są wyświetlane w centralnej części ekranu.</li>
+                </ul>
+                <p class="text-color">6.Zakończenie gry</p>
+                <ul>
+                    <li>Gra nie ma ustalonego końca – możesz grać tyle rund, ile chcesz.</li>
+                    <li>Wynik można zresetować, odświeżając stronę.</li>
+                </ul>
+            </section>
+        </aside>
     </div>
     <script src="js/function.js"></script>
     <script src="js/script.js"></script>
