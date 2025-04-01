@@ -1,5 +1,6 @@
 # javascript-prework
 
+Zadanie 1
 Przygotowanie nowego projektu
 
 Korzystając z wiedzy zdobytej w poprzednim module, przygotuj środowisko nowego projektu o nazwie javascript-prework.
@@ -24,7 +25,8 @@ To wszystko, co będzie Ci potrzebne do realizacji tego modułu. Po przygotowani
 
 ---
 
-Zadanie: Dokończenie logiki gry
+Zadanie 2
+Dokończenie logiki gry
 
 Twoim zadaniem jest dokończenie gry tak, aby poprawnie rozpoznawała ruch komputera i człowieka, a także wyświetlała wynik rundy!
 
@@ -60,3 +62,9 @@ Pamiętaj, żeby obsłużyć również sytuację, gdy występuje remis, a także
 Po zakończeniu pracy znów zapisz commit i wyślij go do zdalnego repozytorium. Następnie, link do najnowszego commita wyślij do sprawdzenia.
 
 Powodzenia!
+
+Zadanie 3
+Wykorzystanie funkcji Twoim zadaniem jest uzupełnienie i wykorzystanie funkcji getMoveName oraz displayResult w taki sposób, aby gra działała poprawnie. W uzupełnieniu deklaracji tych funkcji pomoże Ci rozwiązanie poprzedniego zadania, ponieważ przenosimy do tych funkcji logikę, którą już napisaliśmy.
+
+Zadanie 4
+Jak już zapewne się domyślasz, celem tego zadania jest dokończenie naszej gry. Na stronie umieścisz trzy guziki i napiszesz kod, który sprawi, że po kliknięciu któregoś z guzika zostanie rozegrana partia gry. Oczywiście, wybór guzika będzie jednocześnie wyborem ruchu gracza, dzięki czemu nie będzie już potrzeby wpisywania 1, 2 lub 3 w oknie prompt.
