@@ -12,7 +12,7 @@
 			return 'nieznany ruch';
 		};
 
-		const displayResult = function(argComputerMove, argPlayerMove) {
+		const displayResult = function (argComputerMove, argPlayerMove) {
 			if (argPlayerMove === 'nieznany ruch') {
 				printMessage('Nieprawidłowy ruch gracza');
 			} else if (argPlayerMove === argComputerMove) {
@@ -29,13 +29,13 @@
 				computerWins++;
 			}
 			document.getElementById('result').textContent = `Wynik: Gracz ${playerWins} - ${computerWins} Komputer`;
-		}
+		};
 
-		let computerInput = Math.floor(Math.random() * 3) + 1;
-		let computerMove = getMoveName(computerInput);
+		const computerInput = Math.floor(Math.random() * 3) + 1;
+		const computerMove = getMoveName(computerInput);
 		printMessage('Ruch komputera to: ' + computerMove);
 
-		let playerMove = getMoveName(playerInput);
+		const playerMove = getMoveName(playerInput);
 		printMessage('Twój ruch to: ' + playerMove);
 
 		displayResult(computerMove, playerMove);
