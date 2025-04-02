@@ -19,4 +19,3 @@ To bardzo ważne – nie zmieniaj wszystkiego naraz! Zmień jedną zmienną na s
 To może wydawać się oczywiste, ale łatwo się zapomnieć i zrobić wiele zmian w kodzie. Potem testujemy i zaczynamy przeprawę przez morze błędów, wątpiąc, co zrobiliśmy dobrze, a co źle. Pamiętaj też o commitowaniu po każdej przetestowanej zmianie – dzięki temu zawsze możesz wrócić do ostatniej działającej wersji.
 
 Po zakończeniu zadania upewnij się, że wszystkie zmiany są zapisane w commitach. Wtedy wyślij je na zdalne repozytorium, a link do najnowszego commita wyślij do sprawdzenia.
-
