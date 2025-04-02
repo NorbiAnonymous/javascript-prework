@@ -12,7 +12,7 @@
 			return 'nieznany ruch';
 		};
 
-		function displayResult(argComputerMove, argPlayerMove) {
+		const displayResult = function(argComputerMove, argPlayerMove) {
 			if (argPlayerMove === 'nieznany ruch') {
 				printMessage('Nieprawidłowy ruch gracza');
 			} else if (argPlayerMove === argComputerMove) {
