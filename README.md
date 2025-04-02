@@ -8,9 +8,9 @@ Teraz czas na zastosowanie wiedzy o zmiennych w praktyce! Otwórz swój projekt 
 
     1.cały kod znajdujący się w tym pliku zamknij w bloku za pomocą nawiasów klamrowych { }, aby unikać używania zmiennych/stałych globalnych,
     2.jeśli to możliwe, używaj stałych,
-    3.deklaracje stałych/zmiennych powinny być – w miarę możliwości – zagnieżdżone tak samo, jak miejsce ich wykorzystania, czyli staramy 4.się używać możliwie małych zakresów,
-    5.unikaj sytuacji, w których tuż pod deklaracją zmiennej nadajesz jej wartość – lepiej zrobić to od razu w deklaracji,
-    6.zamień funkcje nazwane na funkcje anonimowe zapisane w stałych,
+    3.deklaracje stałych/zmiennych powinny być – w miarę możliwości – zagnieżdżone tak samo, jak miejsce ich wykorzystania, czyli staramy .się używać możliwie małych zakresów,
+    4.unikaj sytuacji, w których tuż pod deklaracją zmiennej nadajesz jej wartość – lepiej zrobić to od razu w deklaracji,
+    5.zamień funkcje nazwane na funkcje anonimowe zapisane w stałych,
 
 Testuj krok po kroku!
 
