@@ -5,17 +5,12 @@
 	const playGame = function (playerInput) {
 		clearMessages();
 
-		function getMoveName(input) {
-			if (input === 1) {
-				return 'kamień';
-			} else if (input === 2) {
-				return 'papier';
-			} else if (input === 3) {
-				return 'nożyce';
-			} else {
-				return 'nieznany ruch';
-			}
-		}
+		const getMoveName = function (input) {
+			if (input === 1) return 'kamień';
+			if (input === 2) return 'papier';
+			if (input === 3) return 'nożyce';
+			return 'nieznany ruch';
+		};
 
 		function displayResult(argComputerMove, argPlayerMove) {
 			if (argPlayerMove === 'nieznany ruch') {
