@@ -2,7 +2,7 @@
 	let playerWins = 0;
 	let computerWins = 0;
 
-	function playGame(playerInput) {
+	const playGame = function (playerInput) {
 		clearMessages();
 
 		function getMoveName(input) {
@@ -44,7 +44,7 @@
 		printMessage('Twój ruch to: ' + playerMove);
 
 		displayResult(computerMove, playerMove);
-	}
+	};
 
 	document.getElementById('play-rock').addEventListener('click', function () {
 		playGame(1);
